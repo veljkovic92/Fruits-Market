@@ -5,13 +5,11 @@ import { uiActions } from "../../store/ui-slice";
 import Modal from "../UI/Modal";
 import CartForm from "./Cart-form/CartForm";
 import { useState } from "react";
-import Notification from "../UI/Notification";
 
 const Cart = (props) => {
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
   const [orderClicked, setOrderClicked] = useState(false);
-  const notification = useSelector((state) => state.ui.notification);
 
   const cartButtonHandler = () => {
     dispatch(uiActions.showCart(false));

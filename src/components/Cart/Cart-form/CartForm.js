@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { completeOrder, sendCartData } from "../../../store/cart-actions";
+import { completeOrder } from "../../../store/cart-actions";
 import classes from "./CartForm.module.css";
 import { cartActions } from "../../../store/cart-slice";
-import { deleteCartData } from "../../../store/cart-actions";
-import Notification from "../../UI/Notification";
+
 import { uiActions } from "../../../store/ui-slice";
 
 const CartForm = () => {
   const cart = useSelector((state) => state.cart);
-  const notification = useSelector((state) => state.ui.notification);
 
   const dispatch = useDispatch();
   const [checkoutClicked, setCheckoutClicked] = useState(false);
