@@ -1,0 +1,19 @@
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 90;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+
+  top: 20%;
+  transform: translate(-50%, 50%);
+  z-index: 100;
+}

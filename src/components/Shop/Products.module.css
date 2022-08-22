@@ -1,0 +1,29 @@
+.products {
+  text-align: center;
+  z-index: 50;
+  position: relative;
+}
+
+.products h2 {
+  color: white;
+  margin: 2rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 2px black;
+}
+
+.products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .products h2 {
+    font-size: 90%;
+  }
+}

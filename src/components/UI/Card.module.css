@@ -1,0 +1,22 @@
+.card {
+  margin: 1rem auto;
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  width: 40%;
+  max-width: 40rem;
+  box-shadow: 3px 3px 10px 2px black;
+  transition: all 200ms ease-in-out;
+}
+
+li .card:hover {
+  transform: scale(105%);
+  box-shadow: 5px 5px 15px 3px black;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 50%;
+    min-width: 17rem;
+  }
+}

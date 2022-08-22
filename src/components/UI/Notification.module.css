@@ -1,0 +1,42 @@
+.notification {
+  width: 100%;
+  height: 33vh;
+  background-color: #1a8ed1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.notification h2,
+.notification p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.error {
+  background-color: #690000;
+}
+
+.success {
+  background-color: #1ad1b9;
+}
+
+.close-modal-btn {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  background-color: #1ad18b;
+  color: #ffffff;
+  border: 1px solid #1ad18b;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:active {
+  background-color: #1ad16c;
+}

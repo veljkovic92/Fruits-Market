@@ -1,0 +1,45 @@
+.cart-button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #1ad18b;
+}
+
+.cart-button:hover,
+.cart-button:active {
+  background-color: #1ad16c;
+}
+
+.cart-button span {
+  margin: 0 0.5rem;
+}
+
+.badge {
+  background-color: #1ad1b9;
+  border-radius: 30px;
+  padding: 0.15rem 1.25rem;
+  color: #1d1d1d;
+}
+
+@media (max-width: 500px) {
+  .cart-button {
+    font-size: 80%;
+    padding: 0.3rem 1rem;
+  }
+  .badge {
+    padding: 0.07rem 0.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart-button {
+    font-size: 70%;
+    padding: 0.2rem 0.8rem;
+  }
+  .badge {
+    padding: 0.05rem 0.4rem;
+  }
+}
